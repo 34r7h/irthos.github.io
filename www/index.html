@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <title>Gitself</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="description"
+          content="">
+    <meta name="keywords"
+          content="">
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body ng-app="gitself">
+<h1>App Support
+</h1>
+<p>Click contact type for info.</p>
+<ul>
+    <li><h3><a href ng-click="phone = !phone;">Phone</a></h3><p ng-if="phone" ng-init="phone='213-787-4784'">{{phone}}</p></li>
+    <li><h3><a href ng-click="email = !email">Email</a></h3><p ng-if="email" ng-init="email='mfm.081+support@gmail.com'">{{email}}</p></li>
+</ul>
+<h3>Responsible for the following apps:</h3>
+<ul>
+    <li><b>Rogo App</b> App Store, Google Play</li>
+</ul>
+<main ui-view></main>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="scripts/oldieshim.js"></script>
+<![endif]-->
+
+<script src="scripts/vendor.js"></script>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
+
+
